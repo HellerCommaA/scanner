@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QListWidget>
+#include <QAbstractButton>
 #include "susanlistwidget.h"
 
 namespace Ui {
@@ -23,6 +24,7 @@ private:
 public slots:
     void addListItem(QString);
     void startScan();
+    void fileOpen();
 };
 
 #endif // MAINWINDOW_H

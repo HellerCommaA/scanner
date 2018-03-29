@@ -68,7 +68,7 @@
    <widget class="QPushButton" name="startScanButton">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>150</x>
       <y>510</y>
       <width>118</width>
       <height>33</height>
@@ -76,6 +76,19 @@
     </property>
     <property name="text">
      <string>Start Scan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>270</y>
+      <width>118</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
     </property>
    </widget>
   </widget>
@@ -136,8 +149,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>fileOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>startScan()</slot>
+  <slot>fileOpen()</slot>
  </slots>
 </ui>
